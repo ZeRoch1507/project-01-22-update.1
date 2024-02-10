@@ -15,7 +15,7 @@ class CategoryController extends Controller
     public function create(){
         return view('backend.category.create');
     }
-    public function insert(Request $request){
+    public function insert(request $request){
 
         //ทำการป้องกันการกรอกข้อมูลผ่านฟอร์ม
         $validated = $request->validate([
@@ -49,10 +49,11 @@ class CategoryController extends Controller
         alert()->success('อัพเดทช้อมูลสำเสร็จ','ชื่อประเภทสินค้าชื่อนี้ถูกบันทึกลงในระบบฐานข้อมูลเรียบร้อยแล้ว');
         return redirect()->route('c.index');
 }
+
     public function delete($category_id){
         $category = Category::find($category_id);
         $category->delete();
-        alert()->success('ลบข้อมูลสำเร็จ','ข้อมูลนี้ลบเรียบร้อยแล้ว');
-        return redirect()->route(c.index);
+        alert()->success('ลบช้อมูลสำเสร็จ','ข้อมูลถุกลบเรียบร้อยแล้ว');
+        return redirect()->route('c.index');
     }
 }

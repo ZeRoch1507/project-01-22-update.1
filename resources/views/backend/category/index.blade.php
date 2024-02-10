@@ -11,8 +11,8 @@
               <tr style="background-color: #d90009;">
                 <th style="color: #fff;"> ID </th>
                 <th style="color: #fff;">Name</th>
-                <th style="color: #fff;">Create_at</th>
-                <th style="color: #fff;">Update_at</th>
+                <th style="color: #fff;">Created_at</th>
+                <th style="color: #fff;">Updated_at</th>
                 <th style="color: #fff;">Actions</th>
               </tr>
             </thead>

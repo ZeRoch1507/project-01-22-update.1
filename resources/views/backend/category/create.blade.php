@@ -24,7 +24,7 @@
               <div class="alert alert-danger">{{ $message }}</div>
               @enderror
               </div>
-              <input type="submit" value="บันทึก" class="btn btn-primary mt-3" >
+              <input type="submit" value="บันทึก" class="btn btn-success mt-3" >
               <a href="{{ route('c.index') }}" class="btn btn-danger mt-3 mx-2">ย้อนกลับ</a>
             </div>
             </form>

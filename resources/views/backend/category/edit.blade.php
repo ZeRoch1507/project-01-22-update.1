@@ -20,8 +20,8 @@
                 placeholder="กรุณากรอกประเภทสินค้า"
                 aria-describedby="defaultFormControlHelp"
               />
-              <input type="submit" value="อัพเดทข้อมูล" class="btn btn mt-3" style="background-color:rgba(255, 0, 0, 0.867) ;>
-              <div class="mt-3">
+              <input type="submit" value="อัพเดทข้อมูล" class="btn btn mt-3" style="background-color:rgba(255, 0, 0, 0.867) ";>
+              <div class = "mt-3">
               @error('name')
                   <div class="alert alert-danger">{{ $message }}</div>
               @enderror

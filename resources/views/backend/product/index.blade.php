@@ -12,10 +12,11 @@
               <th style="color:#fff;">ID</th>
               <th style="color:#fff;">Name</th>
               <th style="color:#fff;">Category</th>
-              <th style="color:#fff;">Image</th>
               <th style="color:#fff;">Price</th>
+              <th style="color:#fff;">Image</th>
+              <th style="color:#fff;">Description</th>
               <th style="color:#fff;">Created_at</th>
-              <th style="color:#fff;">Update_at</th>
+              <th style="color:#fff;">Updated_at</th>
               <th style="color:#fff;">Actions</th>
               </tr>
             </thead>
@@ -25,10 +26,11 @@
             <td>{{ $product->firstItem() + $loop->index }}</td>
             <td>{{ $pro->name }}</td>
             <td>{{ $pro->category->name}}</td>
-            <td>
-               <img src ="{{ asset('backend/product/resize/'.$pro->image) }}" alt="">
-            </td>
             <td>{{ $pro->price }}</td>
+            <td>
+                <img src ="{{ asset('backend/product/resize/'.$pro->image) }}" alt="">
+             </td>
+            <td>{{ $pro->description }}</td>
             <td>{{ $pro->created_at }}</td>
             <td>{{ $pro->updated_at }}</td>
             <td>
